@@ -2,9 +2,9 @@
 using SeleniumFramework.Amazon;
 using SeleniumTests.BaseTests;
 
-namespace SeleniumTests.Tests
+namespace SeleniumTests.ProductSearchTests
 {
-    public class ProductSearch : BaseTest
+    public class ProductSearchTests : BaseTest
     {
         [Test]
         public void SearchProduct()
