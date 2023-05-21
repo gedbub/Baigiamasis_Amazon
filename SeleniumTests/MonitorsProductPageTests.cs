@@ -1,5 +1,6 @@
 ﻿using NUnit.Framework;
 using SeleniumFramework.Amazon;
+using SeleniumFramework.Amazon.Pages;
 using SeleniumTests.BaseTests;
 
 namespace SeleniumTests.MonitorsProductPageTests
@@ -9,15 +10,14 @@ namespace SeleniumTests.MonitorsProductPageTests
         [Test]
         public void VerifyMonitorsProductDetailsPage()
         {
-            Common.WaitForElementToBeVisible(Locators.ProductDetails.AllLinkLocator);
-            Common.Click(Locators.ProductDetails.AllLinkLocator);
-            Common.WaitForElementToBeVisible(Locators.ProductDetails.ComputersCategoryLocator);
-            Common.Click(Locators.ProductDetails.ComputersCategoryLocator);
-            Common.WaitForElementToBeVisible(Locators.ProductDetails.MonitorsCategoryLocator);
-            Common.Click(Locators.ProductDetails.MonitorsCategoryLocator);
-            Common.WaitForElementToBeVisible(Locators.ProductDetails.FirstProductLocator);
-            Common.Click(Locators.ProductDetails.FirstProductLocator);
-            Assert.IsTrue(Common.WaitForElementToBeVisible(Locators.ProductDetails.ProductTitleLocator));
+            var monitorsProductPage = new MonitorsProductPage();
+
+            monitorsProductPage.NavigateToCategory(Locators.ProductDetails.AllLinkLocator);
+            monitorsProductPage.NavigateToCategory(Locators.ProductDetails.ComputersCategoryLocator);
+            monitorsProductPage.NavigateToCategory(Locators.ProductDetails.MonitorsCategoryLocator);
+            monitorsProductPage.SelectProduct(Locators.ProductDetails.FirstSearchProductLocator);
+
+            Assert.IsTrue(monitorsProductPage.IsPageElementVisible(Locators.ProductDetails.ProductTitleLocator));
         }
     }
 }

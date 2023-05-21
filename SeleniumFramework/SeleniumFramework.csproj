@@ -53,7 +53,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Amazon\AddToCart.cs" />
     <Compile Include="Amazon\Locators.cs" />
+    <Compile Include="Amazon\MonitorsProductPage.cs" />
+    <Compile Include="Amazon\ProductSearch.cs" />
     <Compile Include="Common.cs" />
     <Compile Include="Driver.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

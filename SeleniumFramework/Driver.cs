@@ -13,10 +13,12 @@ namespace SeleniumFramework
         public static void InitializeDriver()
         {
             ChromeOptions options = new ChromeOptions();
+            options.AddArgument("--start-maximized");
             driver.Value = new ChromeDriver(options);
         }
 
-        internal static IWebDriver GetDriver()
+
+        public static IWebDriver GetDriver()
         {
             return driver.Value;
         }

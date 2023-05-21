@@ -230,5 +230,6 @@ namespace SeleniumFramework.Amazon
         {
             Driver.GetDriver().SwitchTo().Window(handle);
         }
+
     }
 }
