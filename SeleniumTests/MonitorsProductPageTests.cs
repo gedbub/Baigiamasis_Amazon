@@ -12,8 +12,11 @@ namespace SeleniumTests.MonitorsProductPageTests
         {
             var monitorsProductPage = new MonitorsProductPage();
 
+            Common.WaitForElementToBeVisible(Locators.ProductDetails.AllLinkLocator);
             monitorsProductPage.NavigateToCategory(Locators.ProductDetails.AllLinkLocator);
+            Common.WaitForElementToBeVisible(Locators.ProductDetails.ComputersCategoryLocator);
             monitorsProductPage.NavigateToCategory(Locators.ProductDetails.ComputersCategoryLocator);
+            Common.WaitForElementToBeVisible(Locators.ProductDetails.MonitorsCategoryLocator);
             monitorsProductPage.NavigateToCategory(Locators.ProductDetails.MonitorsCategoryLocator);
             monitorsProductPage.SelectProduct(Locators.ProductDetails.FirstSearchProductLocator);
 

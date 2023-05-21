@@ -23,10 +23,5 @@ namespace SeleniumFramework.Pages
         {
             Common.Click(Locators.ProductSearch.SearchButton);
         }
-        public void SelectProduct(string productLocator)
-        {
-            Common.WaitForElementToBeVisible(productLocator);
-            Common.Click(productLocator);
-        }
     }
 }

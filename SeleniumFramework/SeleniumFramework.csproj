@@ -57,6 +57,7 @@
     <Compile Include="Amazon\Locators.cs" />
     <Compile Include="Amazon\MonitorsProductPage.cs" />
     <Compile Include="Amazon\ProductSearch.cs" />
+    <Compile Include="Amazon\FilterResults.cs" />
     <Compile Include="Amazon\UserLogin.cs" />
     <Compile Include="Common.cs" />
     <Compile Include="Driver.cs" />

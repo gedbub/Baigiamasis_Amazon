@@ -19,11 +19,6 @@ namespace SeleniumFramework.Pages
             Common.Click(Locators.ProductSearch.FirstAutocompleteResult);
         }
 
-        public void SelectFirstSearchResult()
-        {
-            Common.Click(Locators.ProductSearch.SearchResultItem);
-        }
-
         public bool IsSearchResultVisible()
         {
             return Common.WaitForElementToBeVisible(Locators.ProductSearch.SearchResultItem);

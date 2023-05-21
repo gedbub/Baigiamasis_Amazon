@@ -22,6 +22,7 @@
             public static readonly string CartConfirmation = "//*[@id='attachDisplayAddBaseAlert']";
             public static readonly string FirstProductLocator = "//*[@id='search']/div[1]/div[1]/div/span[1]/div[1]/div[2]/div/div/div/div/div/div[2]/div/div/div[1]/h2/a";
         }
+
         public static class UserLogin
         {
             public static readonly string SignInButton = "//*[@id='nav-signin-tooltip']/a/span";
@@ -30,6 +31,23 @@
             public static readonly string PasswordInput = "//input[@id='ap_password']";
             public static readonly string SignInSubmitButton = "//input[@id='signInSubmit']";
             public static readonly string LoggedInText = "//span[contains(text(),'Hello, Gediminas')]";
-            }
         }
+
+        public static class FilterResultsPage
+        {
+            public static readonly string DontChangeButton = "//*[@id='nav-main']/div[1]/div/div/div[3]/span[1]/span";
+            public static readonly string GiftCardsLink = "//a[contains(text(),'Gift Cards')]";
+            public static readonly string AmazonGiftCardsFilter = "//*[@id='s-refinements']/div[3]/ul/li[1]/span/a/div/label/i";
+            public static readonly string ResultsText = "//div[@data-component-type='s-search-result']";
+        }
+
+
+        public static class HomePage
+        {
+            public static readonly string GiftCardsLink = "//a[@aria-label='Gift Cards']";
+            public static readonly string ThankYouLink = "//a[text()='Thank You']";
+            public static readonly string SeeAllResultsButton = "//a[text()='See all results']";
+            public static readonly string ResultsText = "//h1[text()='Results']";
+        }
+    }
 }
