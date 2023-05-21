@@ -9,7 +9,7 @@
 3. Click on the first suggested item from the autocomplete suggestions.
 4. Verify that the search results are visible.
 
-**Expected Result:**: user is navigated to the search results page.
+**Expected Result:** user is navigated to the search results page.
 
 ---
 
@@ -30,7 +30,7 @@
 3. Click on a first product from the search results.
 4. Click on the "Add to Cart" button.
 
-**Expected Result:**: product is added to the cart successfully.
+**Expected Result:** product is added to the cart successfully.
 
 ---
 ### Scenario 4: User login:
@@ -41,7 +41,7 @@
 5. Enter valid password.
 6. Press "Sign in" button.
 
-**Expected Result:**: user is successfully logged in.
+**Expected Result:** user is successfully logged in.
 
 ---
 ### Scenario 5: Filter results:
@@ -51,4 +51,4 @@
 3. Press "Gift cards".
 4. Select "Featured brands" filter "Amazon".
 
-**Expected Result:**: user is navigated to the search results page.
+**Expected Result:** user is navigated to the search results page.
