@@ -22,5 +22,14 @@
             public static readonly string CartConfirmation = "//*[@id='attachDisplayAddBaseAlert']";
             public static readonly string FirstProductLocator = "//*[@id='search']/div[1]/div[1]/div/span[1]/div[1]/div[2]/div/div/div/div/div/div[2]/div/div/div[1]/h2/a";
         }
-    }
+        public static class UserLogin
+        {
+            public static readonly string SignInButton = "//*[@id='nav-signin-tooltip']/a/span";
+            public static readonly string EmailInput = "//input[@id='ap_email']";
+            public static readonly string ContinueButton = "//input[@id='continue']";
+            public static readonly string PasswordInput = "//input[@id='ap_password']";
+            public static readonly string SignInSubmitButton = "//input[@id='signInSubmit']";
+            public static readonly string LoggedInText = "//span[contains(text(),'Hello, Gediminas')]";
+            }
+        }
 }
