@@ -1,7 +1,5 @@
 ## Smoke Test Scenarios for www.amazon.com
 
----
-
 ### Scenario 1: Search autocomplete results page:
 
 1. Open www.amazon.com in a web browser.
