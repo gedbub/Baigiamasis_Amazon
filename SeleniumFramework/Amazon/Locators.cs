@@ -1,52 +1,52 @@
 ﻿namespace SeleniumFramework.Amazon
 {
-    public static class Locators
+    internal class Locators
     {
-        public static class ProductSearch
+        internal class ProductSearch
         {
-            public static readonly string SearchInput = "//input[@id='twotabsearchtextbox']";
-            public static readonly string AutocompleteResult = "//div[@class='s-suggestion-container']";
-            public static readonly string FirstAutocompleteResult = "//*[@id='nav-flyout-searchAjax']/div[2]/div/div[1]/div[1]/div/div";
-            public static readonly string SearchResultItem = "//div[@data-component-type='s-search-result']";
-            public static readonly string SearchButton = "//input[@value='Go']";
+            internal static string SearchInput = "//input[@id='twotabsearchtextbox']";
+            internal static string AutocompleteResult = "//div[@class='s-suggestion-container']";
+            internal static string FirstAutocompleteResult = "//*[@id='nav-flyout-searchAjax']/div[2]/div/div[1]/div[1]/div/div";
+            internal static string SearchResultItem = "//div[@data-component-type='s-search-result']";
+            internal static string SearchButton = "//input[@value='Go']";
         }
 
-        public static class ProductDetails
+        internal class ProductDetails
         {
-            public static readonly string AllLinkLocator = "//a[@id='nav-hamburger-menu']";
-            public static readonly string ComputersCategoryLocator = "//*[@id='hmenu-content']/ul[1]/li[8]/a";
-            public static readonly string MonitorsCategoryLocator = "//*[@id='hmenu-content']/ul[6]/li[9]";
-            public static readonly string FirstSearchProductLocator = "//*[@id='search']/div[1]/div[1]/div/span[1]/div[1]/div[3]";
-            public static readonly string ProductTitleLocator = "//span[@id='productTitle']";
-            public static readonly string AddToCartButton = "//*[@id='submit.add-to-cart']/span";
-            public static readonly string CartConfirmation = "//*[@id='attachDisplayAddBaseAlert']";
-            public static readonly string FirstProductLocator = "//*[@id='search']/div[1]/div[1]/div/span[1]/div[1]/div[2]/div/div/div/div/div/div[2]/div/div/div[1]/h2/a";
+            internal static string AllLinkLocator = "//a[@id='nav-hamburger-menu']";
+            internal static string ComputersCategoryLocator = "//*[@id='hmenu-content']/ul[1]/li[8]/a";
+            internal static string MonitorsCategoryLocator = "//*[@id='hmenu-content']/ul[6]/li[9]";
+            internal static string FirstSearchProductLocator = "//*[@id='search']/div[1]/div[1]/div/span[1]/div[1]/div[3]";
+            internal static string ProductTitleLocator = "//span[@id='productTitle']";
+            internal static string AddToCartButton = "//*[@id='submit.add-to-cart']/span";
+            internal static string CartConfirmation = "//*[@id='NATC_SMART_WAGON_CONF_MSG_SUCCESS']";
+            internal static string FirstProductLocator = "(//*[@data-component-type='s-search-result']//h2/a)[1]";
         }
 
-        public static class UserLogin
+        internal class UserLogin
         {
-            public static readonly string SignInButton = "//*[@id='nav-signin-tooltip']/a/span";
-            public static readonly string EmailInput = "//input[@id='ap_email']";
-            public static readonly string ContinueButton = "//input[@id='continue']";
-            public static readonly string PasswordInput = "//input[@id='ap_password']";
-            public static readonly string SignInSubmitButton = "//input[@id='signInSubmit']";
-            public static readonly string LoggedInText = "//span[contains(text(),'Hello, Gediminas')]";
+            internal static string SignInButton = "//*[@id='nav-signin-tooltip']/a/span";
+            internal static string EmailInput = "//input[@id='ap_email']";
+            internal static string ContinueButton = "//input[@id='continue']";
+            internal static string PasswordInput = "//input[@id='ap_password']";
+            internal static string SignInSubmitButton = "//input[@id='signInSubmit']";
+            internal static string LoggedInText = "//span[contains(text(),'Hello, Gediminas')]"; // Not a good practice to have the username hardcoded inside of a locator
         }
 
-        public static class FilterResultsPage
+        internal class FilterResultsPage
         {
-            public static readonly string DontChangeButton = "//*[@id='nav-main']/div[1]/div/div/div[3]/span[1]/span";
-            public static readonly string GiftCardsLink = "//a[contains(text(),'Gift Cards')]";
-            public static readonly string AmazonGiftCardsFilter = "//*[@id='s-refinements']/div[3]/ul/li[1]/span/a/div/label/i";
-            public static readonly string ResultsText = "//div[@data-component-type='s-search-result']";
+            internal static string DontChangeButton = "//*[@id='nav-main']/div[1]/div/div/div[3]/span[1]/span";
+            internal static string GiftCardsLink = "//a[contains(text(),'Gift Cards')]";
+            internal static string AmazonGiftCardsFilter = "//*[@id='s-refinements']/div[3]/ul/li[1]/span/a/div/label/i";
+            internal static string ResultsText = "//div[@data-component-type='s-search-result']";
         }
 
-        public static class HomePage
+        internal class HomePage
         {
-            public static readonly string GiftCardsLink = "//a[@aria-label='Gift Cards']";
-            public static readonly string ThankYouLink = "//a[text()='Thank You']";
-            public static readonly string SeeAllResultsButton = "//a[text()='See all results']";
-            public static readonly string ResultsText = "//h1[text()='Results']";
+            internal static string GiftCardsLink = "//a[@aria-label='Gift Cards']";
+            internal static string ThankYouLink = "//a[text()='Thank You']";
+            internal static string SeeAllResultsButton = "//a[text()='See all results']";
+            internal static string ResultsText = "//h1[text()='Results']";
         }
     }
 }

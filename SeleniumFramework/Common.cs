@@ -7,7 +7,7 @@ using System.Linq;
 
 namespace SeleniumFramework
 {
-    public class Common
+    internal class Common
     {
         private static IWebElement GetElement(string locator)
         {
@@ -19,20 +19,26 @@ namespace SeleniumFramework
             return Driver.GetDriver().FindElements(By.XPath(locator)).ToList();
         }
 
-        public static void Click(string locator)
+        internal static void Click(string locator)
         {
             GetElement(locator).Click();
         }
 
-        public static void SendKeys(string locator, string keys)
+        internal static void SendKeys(string locator, string keys)
         {
             GetElement(locator).SendKeys(keys);
         }
 
-        public static bool WaitForElementToBeVisible(string locator)
+        internal static bool WaitForElementToBeVisible(string locator)
         {
             WebDriverWait wait = new WebDriverWait(Driver.GetDriver(), TimeSpan.FromSeconds(10));
             return wait.Until(ExpectedConditions.ElementIsVisible(By.XPath(locator))).Displayed;
-        }    
+        }
+
+        internal static void WaitForElementToBeVisibleAndClick(string locator)
+        {
+            WaitForElementToBeVisible(locator);
+            Click(locator);
+        }
     }
 }

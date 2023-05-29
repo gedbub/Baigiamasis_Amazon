@@ -2,21 +2,29 @@
 {
     public class MonitorsProduct
     {
-        public static void NavigateToCategory(string categoryLocator)
+        public static void OpenMenuAll()
         {
-            Common.WaitForElementToBeVisible(categoryLocator);
-            Common.Click(categoryLocator);
+            Common.WaitForElementToBeVisibleAndClick(Locators.ProductDetails.AllLinkLocator);
         }
 
-        public static void SelectProduct(string productLocator)
+        public static void ExpandMenuComputers()
         {
-            Common.WaitForElementToBeVisible(productLocator);
-            Common.Click(productLocator);
+            Common.WaitForElementToBeVisibleAndClick(Locators.ProductDetails.ComputersCategoryLocator);
         }
 
-        public static bool IsPageElementVisible(string elementLocator)
+        public static void ExpandMenuMonitors()
         {
-            return Common.WaitForElementToBeVisible(elementLocator);
+            Common.WaitForElementToBeVisibleAndClick(Locators.ProductDetails.MonitorsCategoryLocator);
+        }
+
+        public static void SelectFirstProduct()
+        {
+            Common.WaitForElementToBeVisibleAndClick(Locators.ProductDetails.FirstSearchProductLocator);
+        }
+
+        public static bool IsPageElementVisible()
+        {
+            return Common.WaitForElementToBeVisible(Locators.ProductDetails.ProductTitleLocator);
         }
     }
 }
