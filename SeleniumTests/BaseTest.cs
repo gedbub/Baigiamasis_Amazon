@@ -2,7 +2,7 @@
 using NUnit.Framework.Interfaces;
 using SeleniumFramework;
 
-namespace SeleniumTests.BaseTests
+namespace SeleniumTests
 {
     public class BaseTest
     {

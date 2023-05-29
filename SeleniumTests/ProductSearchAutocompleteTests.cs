@@ -1,8 +1,7 @@
 ﻿using NUnit.Framework;
 using SeleniumFramework.Amazon;
-using SeleniumTests.BaseTests;
 
-namespace SeleniumTests.Tests
+namespace SeleniumTests
 {
     public class ProductSearchAutocompleteTests : BaseTest
     {

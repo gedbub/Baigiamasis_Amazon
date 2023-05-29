@@ -1,9 +1,8 @@
 ﻿using NUnit.Framework;
 using SeleniumFramework;
 using SeleniumFramework.Amazon;
-using SeleniumTests.BaseTests;
 
-namespace SeleniumTests.MonitorsProductPageTests
+namespace SeleniumTests
 {
     public class ProductMonitorsTest : BaseTest
     {
