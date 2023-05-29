@@ -1,6 +1,4 @@
-﻿using SeleniumFramework.Amazon;
-
-namespace SeleniumFramework.Pages
+﻿namespace SeleniumFramework.Amazon
 {
     public class ProductSearch
     {

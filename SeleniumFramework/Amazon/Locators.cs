@@ -41,7 +41,6 @@
             public static readonly string ResultsText = "//div[@data-component-type='s-search-result']";
         }
 
-
         public static class HomePage
         {
             public static readonly string GiftCardsLink = "//a[@aria-label='Gift Cards']";

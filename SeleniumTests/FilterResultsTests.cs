@@ -1,17 +1,17 @@
 ﻿using NUnit.Framework;
-using SeleniumFramework.Pages;
+using SeleniumFramework.Amazon;
 using SeleniumTests.BaseTests;
 
 namespace SeleniumTests.Tests
 {
     public class FilterResultsTests : BaseTest
     {
-        private SeleniumFramework.Pages.FilterResultsPage filterResultsPage;
+        private FilterResultsPage filterResultsPage;
 
         [SetUp]
         public void Setup()
         {
-            filterResultsPage = new SeleniumFramework.Pages.FilterResultsPage();
+            filterResultsPage = new FilterResultsPage();
         }
 
         [Test]

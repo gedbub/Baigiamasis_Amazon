@@ -17,7 +17,6 @@ namespace SeleniumFramework
             driver.Value = new ChromeDriver(options);
         }
 
-
         public static IWebDriver GetDriver()
         {
             return driver.Value;

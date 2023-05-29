@@ -1,5 +1,5 @@
 ﻿using NUnit.Framework;
-using SeleniumFramework.Pages;
+using SeleniumFramework.Amazon;
 using SeleniumTests.BaseTests;
 
 namespace SeleniumTests.Tests

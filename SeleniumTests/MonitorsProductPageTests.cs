@@ -1,6 +1,6 @@
 ﻿using NUnit.Framework;
+using SeleniumFramework;
 using SeleniumFramework.Amazon;
-using SeleniumFramework.Amazon.Pages;
 using SeleniumTests.BaseTests;
 
 namespace SeleniumTests.MonitorsProductPageTests

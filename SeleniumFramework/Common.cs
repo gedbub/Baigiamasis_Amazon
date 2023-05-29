@@ -1,13 +1,11 @@
 ﻿using OpenQA.Selenium;
-using OpenQA.Selenium.Interactions;
-using OpenQA.Selenium.Support.Extensions;
 using OpenQA.Selenium.Support.UI;
 using SeleniumExtras.WaitHelpers;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace SeleniumFramework.Amazon
+namespace SeleniumFramework
 {
     public class Common
     {
@@ -36,5 +34,5 @@ namespace SeleniumFramework.Amazon
             WebDriverWait wait = new WebDriverWait(Driver.GetDriver(), TimeSpan.FromSeconds(10));
             return wait.Until(ExpectedConditions.ElementIsVisible(By.XPath(locator))).Displayed;
         }    
-}
+    }
 }

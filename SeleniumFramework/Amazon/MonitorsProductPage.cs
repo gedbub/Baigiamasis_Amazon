@@ -1,6 +1,4 @@
-﻿using SeleniumFramework;
-
-namespace SeleniumFramework.Amazon.Pages
+﻿namespace SeleniumFramework.Amazon
 {
     public class MonitorsProductPage
     {
