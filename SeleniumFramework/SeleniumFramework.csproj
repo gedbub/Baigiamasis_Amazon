@@ -55,7 +55,7 @@
   <ItemGroup>
     <Compile Include="Amazon\AddToCart.cs" />
     <Compile Include="Amazon\Locators.cs" />
-    <Compile Include="Amazon\MonitorsProductPage.cs" />
+    <Compile Include="Amazon\MonitorsProduct.cs" />
     <Compile Include="Amazon\ProductSearch.cs" />
     <Compile Include="Amazon\FilterResults.cs" />
     <Compile Include="Amazon\UserLogin.cs" />

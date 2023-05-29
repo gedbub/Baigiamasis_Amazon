@@ -1,20 +1,20 @@
 ﻿namespace SeleniumFramework.Amazon
 {
-    public class MonitorsProductPage
+    public class MonitorsProduct
     {
-        public void NavigateToCategory(string categoryLocator)
+        public static void NavigateToCategory(string categoryLocator)
         {
             Common.WaitForElementToBeVisible(categoryLocator);
             Common.Click(categoryLocator);
         }
 
-        public void SelectProduct(string productLocator)
+        public static void SelectProduct(string productLocator)
         {
             Common.WaitForElementToBeVisible(productLocator);
             Common.Click(productLocator);
         }
 
-        public bool IsPageElementVisible(string elementLocator)
+        public static bool IsPageElementVisible(string elementLocator)
         {
             return Common.WaitForElementToBeVisible(elementLocator);
         }

@@ -2,22 +2,22 @@
 {
     public class AddToCart
     {
-        public void SelectFirstProduct()
+        public static void SelectFirstProduct()
         {
             Common.Click(Locators.ProductDetails.FirstProductLocator);
         }
 
-        public void AddProductToCart()
+        public static void AddProductToCart()
         {
             Common.Click(Locators.ProductDetails.AddToCartButton);
         }
 
-        public bool VerifyItemAdded()
+        public static bool VerifyItemAdded()
         {
             return Common.WaitForElementToBeVisible(Locators.ProductDetails.CartConfirmation);
         }
 
-        public void SubmitSearch()
+        public static void SubmitSearch()
         {
             Common.Click(Locators.ProductSearch.SearchButton);
         }

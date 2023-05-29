@@ -10,17 +10,15 @@ namespace SeleniumTests.MonitorsProductPageTests
         [Test]
         public void VerifyMonitorsProductDetailsPage()
         {
-            var monitorsProductPage = new MonitorsProductPage();
-
             Common.WaitForElementToBeVisible(Locators.ProductDetails.AllLinkLocator);
-            monitorsProductPage.NavigateToCategory(Locators.ProductDetails.AllLinkLocator);
+            MonitorsProduct.NavigateToCategory(Locators.ProductDetails.AllLinkLocator);
             Common.WaitForElementToBeVisible(Locators.ProductDetails.ComputersCategoryLocator);
-            monitorsProductPage.NavigateToCategory(Locators.ProductDetails.ComputersCategoryLocator);
+            MonitorsProduct.NavigateToCategory(Locators.ProductDetails.ComputersCategoryLocator);
             Common.WaitForElementToBeVisible(Locators.ProductDetails.MonitorsCategoryLocator);
-            monitorsProductPage.NavigateToCategory(Locators.ProductDetails.MonitorsCategoryLocator);
-            monitorsProductPage.SelectProduct(Locators.ProductDetails.FirstSearchProductLocator);
+            MonitorsProduct.NavigateToCategory(Locators.ProductDetails.MonitorsCategoryLocator);
+            MonitorsProduct.SelectProduct(Locators.ProductDetails.FirstSearchProductLocator);
 
-            Assert.IsTrue(monitorsProductPage.IsPageElementVisible(Locators.ProductDetails.ProductTitleLocator));
+            Assert.IsTrue(MonitorsProduct.IsPageElementVisible(Locators.ProductDetails.ProductTitleLocator));
         }
     }
 }

@@ -6,21 +6,13 @@ namespace SeleniumTests.Tests
 {
     public class FilterResultsTests : BaseTest
     {
-        private FilterResultsPage filterResultsPage;
-
-        [SetUp]
-        public void Setup()
-        {
-            filterResultsPage = new FilterResultsPage();
-        }
-
         [Test]
         public void VerifyFilterResults()
         {
-            filterResultsPage.ClickDontChangeButton();
-            filterResultsPage.ClickGiftCardsLink();
-            filterResultsPage.ClickAmazonGiftCardsFilter();
-            Assert.IsTrue(filterResultsPage.VerifyResultsDisplayed());
+            FilterResults.ClickDontChangeButton();
+            FilterResults.ClickGiftCardsLink();
+            FilterResults.ClickAmazonGiftCardsFilter();
+            Assert.IsTrue(FilterResults.VerifyResultsDisplayed());
         }
     }
 }
