@@ -1,25 +1,23 @@
-﻿using SeleniumFramework.Amazon;
-
-namespace SeleniumFramework.Pages
+﻿namespace SeleniumFramework.Amazon
 {
     public class ProductSearch
     {
-        public void EnterSearchTerm(string searchTerm)
+        public static void EnterSearchTerm(string searchTerm)
         {
             Common.SendKeys(Locators.ProductSearch.SearchInput, searchTerm);
         }
 
-        public bool IsAutocompleteResultVisible()
+        public static bool IsAutocompleteResultVisible()
         {
             return Common.WaitForElementToBeVisible(Locators.ProductSearch.AutocompleteResult);
         }
 
-        public void SelectFirstAutocompleteResult()
+        public static void SelectFirstAutocompleteResult()
         {
             Common.Click(Locators.ProductSearch.FirstAutocompleteResult);
         }
 
-        public bool IsSearchResultVisible()
+        public static bool IsSearchResultVisible()
         {
             return Common.WaitForElementToBeVisible(Locators.ProductSearch.SearchResultItem);
         }

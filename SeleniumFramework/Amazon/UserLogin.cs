@@ -1,35 +1,33 @@
-﻿using SeleniumFramework.Amazon;
-
-namespace SeleniumFramework.Pages
+﻿namespace SeleniumFramework.Amazon
 {
     public class UserLogin
     {
-        public void ClickSignInButton()
+        public static void ClickSignInButton()
         {
             Common.Click(Locators.UserLogin.SignInButton);
         }
 
-        public void EnterEmail(string email)
+        public static void EnterEmail(string email)
         {
             Common.SendKeys(Locators.UserLogin.EmailInput, email);
         }
 
-        public void ClickContinue()
+        public static void ClickContinue()
         {
             Common.Click(Locators.UserLogin.ContinueButton);
         }
 
-        public void EnterPassword(string password)
+        public static void EnterPassword(string password)
         {
             Common.SendKeys(Locators.UserLogin.PasswordInput, password);
         }
 
-        public void ClickSignIn()
+        public static void ClickSignIn()
         {
             Common.Click(Locators.UserLogin.SignInSubmitButton);
         }
 
-        public bool IsLoggedIn()
+        public static bool IsLoggedIn()
         {
             return Common.WaitForElementToBeVisible(Locators.UserLogin.LoggedInText);
         }

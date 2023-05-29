@@ -1,25 +1,23 @@
-﻿using SeleniumFramework.Amazon;
-
-namespace SeleniumFramework.Pages
+﻿namespace SeleniumFramework.Amazon
 {
-    public class FilterResultsPage
+    public class FilterResults
     {
-        public void ClickDontChangeButton()
+        public static void ClickDontChangeButton()
         {
             Common.Click(Locators.FilterResultsPage.DontChangeButton);
         }
 
-        public void ClickGiftCardsLink()
+        public static void ClickGiftCardsLink()
         {
             Common.Click(Locators.FilterResultsPage.GiftCardsLink);
         }
 
-        public void ClickAmazonGiftCardsFilter()
+        public static void ClickAmazonGiftCardsFilter()
         {
             Common.Click(Locators.FilterResultsPage.AmazonGiftCardsFilter);
         }
 
-        public bool VerifyResultsDisplayed()
+        public static bool VerifyResultsDisplayed()
         {
             return Common.WaitForElementToBeVisible(Locators.FilterResultsPage.ResultsText);
         }
